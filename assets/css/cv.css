@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #F9F9F6;
+}
+body div {
+  padding: 5px;
+}
+
+#menu {
+  background-color: #F9F9F6;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+#menu a {
+  font-family: "Work Sans", sans-serif;
+  color: #F49F0A;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+}
+#menu a:hover {
+  color: #0A5FF4;
+}
+#menu i {
+  color: #F49F0A;
+  padding: 10px;
+  font-size: 25px;
+}
+#menu i:hover {
+  color: #0A5FF4;
+}
+#menu #icone {
+  text-align: end;
+}
+
+footer {
+  padding-top: 20px;
+  font-size: 15px;
+  color: #F49F0A;
+  font-family: "Work Sans", sans-serif;
+}
+footer i {
+  padding: 20px;
+  font-size: 25px;
+  color: #F49F0A;
+}
+footer i:hover {
+  color: #0A5FF4;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#intestazione {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  color: #0A5FF4;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  color: #0A5FF4;
+  font-size: 20px;
+}
+@media (max-width: 390px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+#curriculum {
+  border: solid;
+  border-color: #0A5FF4;
+  border-radius: 25px;
+}
+#curriculum div {
+  color: #F49F0A;
+}
+
+.linea {
+  border-bottom: solid;
+  border-color: #0A5FF4;
+  border-width: 1px;
+}
+
+.linea-fine {
+  border-bottom: solid;
+  border-color: #0A5FF4;
+}
+
+img {
+  float: right;
+  position: relative;
+  top: -30px;
+  z-index: -1;
+}/*# sourceMappingURL=cv.css.map */

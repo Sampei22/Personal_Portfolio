@@ -1,0 +1,41 @@
+@import 'main';
+
+h1 {
+    font-family: "Inter", sans-serif;
+    color: #0A5FF4;
+    margin-left: 50px;
+}
+
+#skill{
+    font-size: 20px;
+    color: $primary-color;
+    font-family: "Work Sans", sans-serif;
+    border: solid;
+    border-color: $secondary-color;
+    border-radius: 25px;
+    padding: 20px;
+    z-index: -1;
+        
+    img{
+    float: right;
+    position: relative;
+    top:-50px;
+    padding-left: 20px;
+    z-index: 1;
+
+    @include screen-width(600px) {
+                top:-20px;
+            }
+
+    @include screen-width(485px) {
+                float:none;
+                
+                max-width: 50%;
+                margin-left: 25%;
+                margin-right: 25%;
+                top:0px;
+                padding-bottom: 20px;
+            }
+
+    }
+}

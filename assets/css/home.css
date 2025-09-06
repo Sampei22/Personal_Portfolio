@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #F9F9F6;
+}
+body div {
+  padding: 5px;
+}
+
+#menu {
+  background-color: #F9F9F6;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+#menu a {
+  font-family: "Work Sans", sans-serif;
+  color: #F49F0A;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+}
+#menu a:hover {
+  color: #0A5FF4;
+}
+#menu i {
+  color: #F49F0A;
+  padding: 10px;
+  font-size: 25px;
+}
+#menu i:hover {
+  color: #0A5FF4;
+}
+#menu #icone {
+  text-align: end;
+}
+
+footer {
+  padding-top: 20px;
+  font-size: 15px;
+  color: #F49F0A;
+  font-family: "Work Sans", sans-serif;
+}
+footer i {
+  padding: 20px;
+  font-size: 25px;
+  color: #F49F0A;
+}
+footer i:hover {
+  color: #0A5FF4;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+body h1 {
+  font-family: "Inter", sans-serif;
+  color: #0A5FF4;
+  margin-left: 10px;
+}
+body h2 {
+  font-family: "Inter", sans-serif;
+  color: #F49F0A;
+  font-size: 20px;
+  margin-left: 20px;
+}
+body #descrizione {
+  position: relative;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  color: #F49F0A;
+  margin: 20px;
+  padding: 20px 0px 0px 20px;
+  border-color: #0A5FF4;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  z-index: -1;
+}
+body #descrizione img {
+  top: -150px;
+  float: right;
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 1180px) {
+  body #descrizione img {
+    top: -80px;
+    float: right;
+    position: relative;
+  }
+}
+@media (max-width: 925px) {
+  body #descrizione img {
+    float: none;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 0px;
+    padding-bottom: 20px;
+  }
+}
+body .btn {
+  background-color: #F9F9F6;
+  color: #0A5FF4;
+  border-color: #0A5FF4;
+  margin: 10px 50px;
+}
+body .btn:hover {
+  background-color: #0A5FF4;
+  border-color: #0A5FF4;
+}/*# sourceMappingURL=home.css.map */

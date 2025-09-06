@@ -1,0 +1,37 @@
+@import 'main';
+
+h1 {
+    font-family: "Inter", sans-serif;
+    color: #0A5FF4;
+    text-align: center;
+
+     @include screen-width(635px) {
+        max-width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        }
+}
+
+.card-progetto{
+    p{
+        padding-bottom: 50px;
+    }
+
+    @include screen-width(635px) {
+        font-size: 15px;
+        h5{
+            font-size: 15px;
+        }
+    }
+}
+
+.btn{
+    position: absolute;
+    bottom: 25px;
+
+     @include screen-width(445px) { 
+        right:5%;
+        left: 5%;
+        bottom:15px;
+    }
+}

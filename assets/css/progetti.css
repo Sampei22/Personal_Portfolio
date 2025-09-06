@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #F9F9F6;
+}
+body div {
+  padding: 5px;
+}
+
+#menu {
+  background-color: #F9F9F6;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+#menu a {
+  font-family: "Work Sans", sans-serif;
+  color: #F49F0A;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px;
+}
+#menu a:hover {
+  color: #0A5FF4;
+}
+#menu i {
+  color: #F49F0A;
+  padding: 10px;
+  font-size: 25px;
+}
+#menu i:hover {
+  color: #0A5FF4;
+}
+#menu #icone {
+  text-align: end;
+}
+
+footer {
+  padding-top: 20px;
+  font-size: 15px;
+  color: #F49F0A;
+  font-family: "Work Sans", sans-serif;
+}
+footer i {
+  padding: 20px;
+  font-size: 25px;
+  color: #F49F0A;
+}
+footer i:hover {
+  color: #0A5FF4;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  color: #0A5FF4;
+  text-align: center;
+}
+@media (max-width: 635px) {
+  h1 {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.card-progetto p {
+  padding-bottom: 50px;
+}
+@media (max-width: 635px) {
+  .card-progetto {
+    font-size: 15px;
+  }
+  .card-progetto h5 {
+    font-size: 15px;
+  }
+}
+
+.btn {
+  position: absolute;
+  bottom: 25px;
+}
+@media (max-width: 445px) {
+  .btn {
+    right: 5%;
+    left: 5%;
+    bottom: 15px;
+  }
+}/*# sourceMappingURL=progetti.css.map */

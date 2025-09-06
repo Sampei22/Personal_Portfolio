@@ -1,0 +1,69 @@
+@import 'main';
+
+body{
+    
+    h1 {
+        font-family: "Inter", sans-serif;
+        color: #0A5FF4;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-family: "Inter", sans-serif;
+        color: #F49F0A;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    #descrizione{
+        position: relative;
+        font-size: 18px;
+        font-family: "Work Sans", sans-serif;
+        color: #F49F0A;
+        margin: 20px;
+        padding: 20px 0px 0px 20px;
+        border-color: $secondary-color;
+        border-radius: 25px;
+        border-style: solid;
+        border-width: 2px;
+        z-index: -1;
+
+        img{
+            top:-150px;
+            float: right;
+            position: relative;
+            z-index: -1;
+
+            @include screen-width(1180px) {
+                top:-80px;
+                float: right;
+                position: relative;
+            }
+
+            @include screen-width(925px) {
+                float:none;
+                
+                max-width: 50%;
+                margin-left: 25%;
+                margin-right: 25%;
+                top:0px;
+                padding-bottom: 20px;
+            }
+        }
+        
+    }
+
+
+
+    .btn {
+    background-color: #F9F9F6;
+    color: #0A5FF4;
+    border-color: #0A5FF4;
+    margin: 10px 50px;
+
+    &:hover {
+    background-color: #0A5FF4;
+    border-color: #0A5FF4;
+    }
+    }
+}

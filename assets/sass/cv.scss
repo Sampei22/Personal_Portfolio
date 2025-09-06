@@ -1,0 +1,50 @@
+@import 'main';
+#intestazione{
+    font-size: 20px;
+    padding-top: 20px;
+}
+h2{
+    font-family: "Inter", sans-serif;
+    color: $secondary-color;
+    font-size: 30px;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    color: $secondary-color;
+    font-size: 20px;
+    
+    @include screen-width(390px) {
+            font-size: 15px;
+    }
+
+
+}
+
+#curriculum{
+    border: solid;
+    border-color: $secondary-color;
+    border-radius: 25px;
+
+    div{
+        color: $primary-color;
+    }
+}
+
+.linea{
+    border-bottom: solid;
+    border-color: $secondary-color;
+    border-width: 1px;
+}
+
+.linea-fine{
+    border-bottom: solid;
+    border-color: $secondary-color;
+}
+
+img{
+    float: right;
+    position: relative;
+    top:-30px;
+    z-index: -1;
+}

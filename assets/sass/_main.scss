@@ -1,0 +1,75 @@
+$primary-color: #F49F0A;
+$secondary-color: #0A5FF4;
+$background-color: #F9F9F6;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin screen-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+body{
+    background-color: $background-color; 
+    
+    div{
+        padding: 5px;
+    } 
+}
+
+#menu{
+    background-color: $background-color;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+    a{
+        font-family: "Work Sans", sans-serif;
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    a:hover{
+        color:$secondary-color;
+    }
+
+    i{
+        color:$primary-color;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    i:hover{
+        color: $secondary-color;
+    }
+
+    #icone{
+    text-align: end;
+    }
+}
+
+footer {
+    padding-top: 20px;
+    font-size: 15px;
+    color: $primary-color;
+    font-family: "Work Sans", sans-serif;
+
+    i {
+        padding: 20px;
+        font-size: 25px;
+        color: $primary-color;
+
+        &:hover {
+        color: $secondary-color;
+        }
+    }
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
