@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="../css/contattami.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+            emailjs.init(publicKey: "z626p1W_8MXYubgJe");
+       })();
+    </script>
+
     </head>
 <body>
     <div id="menu" class="container-fluid">
@@ -61,13 +70,6 @@
             </div>
         </div>
     </div>
-    <form method="POST" action="mailto:e.sanchini93@gmail.com" enctype="text/plain">
-        Oggetto del messaggio:<br />
-            <input type="text" name="nome"><br />
-                Testo:<br />
-                <textarea name="descrizione"></textarea><br />
-                <input type="submit" value="Invia Email">
-    </form>
 </div>
 
 <footer class="items-foot">
@@ -88,6 +90,7 @@
 </body>
 
 </html>
+
 
 
 
