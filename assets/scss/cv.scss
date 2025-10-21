@@ -1,0 +1,64 @@
+@import 'main';
+
+#intestazione{
+    font-family: $font-secondary;
+    color: $secondary-color;
+    font-size: 1.25rem;
+    padding-top: 2.5rem;
+    height: 20rem;
+}
+
+img{
+    float: right;
+    position: relative;
+    z-index: -1;
+    top: 2rem;
+    border-radius: 50%;
+    background-color: $secondary-background-color;
+    height: 15rem;
+    @include screen-width(931px) {
+            top:-3rem;
+    }
+}
+
+h2{
+    font-family: $font-title;
+    color: $secondary-color;
+    font-size: 1.87rem;
+}
+
+h3{
+    font-family: $font-secondary;
+    color: $secondary-color;
+    font-size: 1.25rem;
+}
+
+#curriculum{
+    border: solid;
+    border-color: $secondary-color;
+    border-radius: 1.56rem;
+
+    div{
+        color: $primary-color;
+    }
+}
+
+.linea{
+    border-bottom: solid;
+    border-color: $secondary-color;
+    border-width: 1px;
+}
+
+.linea-fine{
+    border-bottom: solid;
+    border-color: $secondary-color;
+}
+
+.col, .col-4{
+    padding: 1rem;
+    @include screen-width(450px) {
+        font-size: 0.75rem;
+    }
+}
+
+

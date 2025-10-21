@@ -1,0 +1,178 @@
+@import 'main';
+
+body{
+    background-color: $background-color;
+}
+
+main{
+    margin: 1.25rem;
+    padding-top: 0.63rem;
+
+    #fotoMain{
+        float: right;
+        margin-right: 12.5rem;
+        margin-top: -3.13rem;
+        width: 18.75rem;
+        height: 18;
+        border-radius: 25%;
+        background-color: $secondary-background-color;
+
+        @include screen-width(1350px)
+        {
+            margin-right: 9.37rem;
+        }
+
+        @include screen-width(1150px)
+        {
+            margin-right: 3.12rem;
+        }
+
+        @include screen-width(900px)
+        {
+            margin-right: 1.56rem;
+        }
+
+        @include screen-width(780px)
+        {
+            float: none;
+            margin: 1.56rem;
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    }
+    
+    p{
+        font-family: $font-secondary;
+        width: 50%;
+        margin: 0 0 0 5rem;
+        padding-bottom: 9rem;
+        color:$secondary-color;
+        size: 1.25rem;
+
+         @include screen-width(780px)
+        {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-bottom: 0;
+        }
+    }
+
+    h1{
+        font-family: $font-title;
+        margin: 1.25rem;
+        color: $secondary-color;
+    }
+
+    h2{
+        font-family: $font-title;
+        max-width: 80%;
+        margin-left: 2.5rem;
+        color: $primary-color;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #btnCTA{   
+        font-family: $font-secondary;
+        margin: 1.25rem 3.75rem;
+        display: block;
+        color: $secondary-color;
+        background-color: $primary-color;
+        border-color: $secondary-color;
+        
+
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+}
+
+#project{
+    h3{
+        font-family: $font-title;
+        color: $secondary-color;
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .card{
+        border-color: $secondary-color;
+        height: 35rem; 
+        width: 18rem;
+        margin: 0.625rem;
+
+        h5{
+            font-family: $font-title;
+            color: $primary-color;
+        }
+ 
+        p{
+            font-family: $font-secondary;
+            color: $secondary-color;
+        }
+    }
+
+    #btnLink{  
+        font-family: $font-secondary;
+        position: absolute;
+        bottom: 0.9rem;
+        color: $secondary-color;
+        background-color: $primary-color;
+        border-color: $secondary-color;
+        
+
+        &:hover{
+            color: $primary-color;
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+}
+
+#skills{
+    margin-top: 2.5rem;
+
+     h3{
+        font-family: $font-title;
+        color: $secondary-color;
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    i{
+        font-size: 2.5rem;
+        color: $secondary-color;
+        margin-bottom: 1.25rem;
+        margin-left: 45%;
+        margin-right: 45%;
+    }
+
+    p{
+        font-family: $font-secondary;
+        font-size: 1.13rem;
+    }
+}
+
+#imgProgetti{
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: $secondary-background-color;
+}
+
+.row{
+    margin:0;
+}
+
+#skills{
+    margin-bottom: 1.25rem;
+}

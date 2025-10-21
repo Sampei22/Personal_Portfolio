@@ -1,0 +1,365 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  height: 3.75rem;
+  background-color: #00A991;
+  margin: 1.25rem;
+  border-radius: 1rem;
+}
+header a {
+  padding: 0.94rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #1D2129;
+}
+header a:hover {
+  color: #E9ECEF;
+}
+header ul {
+  background-color: #00A991;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  padding: 1.25rem;
+}
+header #icone {
+  margin-right: 1.25rem;
+}
+header #icone i {
+  padding: 0.75rem;
+  font-size: 1.88rem;
+  color: #1D2129;
+}
+header #icone i:hover {
+  color: #E9ECEF;
+}
+
+.navHamburger {
+  margin: 0;
+  width: 2em;
+  height: 1.5em;
+  position: absolute;
+  z-index: 110;
+  top: 1.25rem;
+  left: 3rem;
+  transform: rotate(0deg);
+  transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.navHamburger span {
+  left: 0;
+  width: 100%;
+  height: 0.13rem;
+  display: block;
+  position: absolute;
+  background-color: #1D2129;
+}
+.navHamburger span:nth-child(1) {
+  top: 0;
+  width: 100%;
+}
+.navHamburger span:nth-child(2),
+.navHamburger span:nth-child(3) {
+  top: 10px;
+  width: 100%;
+}
+.navHamburger span:nth-child(4) {
+  top: 20px;
+  width: 100%;
+}
+
+.open .navHamburger {
+  transform: rotate(180deg);
+}
+
+.open .navHamburger span:nth-child(1) {
+  top: 2rem;
+  width: 0;
+}
+
+.open .navHamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  width: 100%;
+}
+
+.open .navHamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  width: 100%;
+}
+
+.open .navHamburger span:nth-child(4) {
+  width: 0;
+  top: 50%;
+}
+
+.offScreeMenu {
+  height: 100vh;
+  max-width: 300px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+}
+
+.open .offScreeMenu {
+  left: 1.25rem;
+  top: 3.007rem;
+  transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.offScreeMenuTelefono {
+  height: 100vh;
+  max-width: 300px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+}
+
+.openTelefono .offScreeMenuTelefono {
+  right: 1.25rem;
+  top: 1.625rem;
+  transition: all;
+  z-index: -100;
+}
+.openTelefono .offScreeMenuTelefono ul {
+  margin-top: 1.25rem;
+  padding-top: 2rem;
+}
+
+.offScreeMenuWhatsapp {
+  height: 100vh;
+  max-width: 300px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+}
+
+.openWhatsapp .offScreeMenuWhatsapp {
+  right: 1.25rem;
+  top: 1.65rem;
+  transition: all;
+  z-index: -100;
+}
+.openWhatsapp .offScreeMenuWhatsapp ul {
+  margin-top: 1.25rem;
+  padding-top: 2rem;
+}
+
+.offScreeMenuEmail {
+  height: 100vh;
+  max-width: 300px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+}
+
+.openEmail .offScreeMenuEmail {
+  right: 1.25rem;
+  top: 1.65rem;
+  transition: all;
+  z-index: -100;
+}
+.openEmail .offScreeMenuEmail ul {
+  margin-top: 1.25rem;
+  padding-top: 2rem;
+}
+
+.menuList {
+  list-style-type: none;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1D2129;
+  background-color: #00A991;
+  padding-top: 1.25rem;
+  bottom: 0;
+  font-size: 1rem;
+  margin-top: 1.56rem;
+  position: static;
+  bottom: 0;
+}
+@media (max-width: 650px) {
+  footer {
+    display: block;
+    padding-bottom: 1.87rem;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+footer div {
+  text-align: center;
+}
+footer a {
+  padding: 0.625rem;
+  font-size: 2rem;
+  color: #1D2129;
+}
+footer a:hover {
+  color: #F7F7F7;
+}
+
+body {
+  background-color: #F7F7F7;
+}
+
+main {
+  margin: 1.25rem;
+  padding-top: 0.63rem;
+}
+main #fotoMain {
+  float: right;
+  margin-right: 12.5rem;
+  margin-top: -3.13rem;
+  width: 18.75rem;
+  height: 18;
+  border-radius: 25%;
+  background-color: #E9ECEF;
+}
+@media (max-width: 1350px) {
+  main #fotoMain {
+    margin-right: 9.37rem;
+  }
+}
+@media (max-width: 1150px) {
+  main #fotoMain {
+    margin-right: 3.12rem;
+  }
+}
+@media (max-width: 900px) {
+  main #fotoMain {
+    margin-right: 1.56rem;
+  }
+}
+@media (max-width: 780px) {
+  main #fotoMain {
+    float: none;
+    margin: 1.56rem;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+main p {
+  font-family: "Inconsolata", monospace;
+  width: 50%;
+  margin: 0 0 0 5rem;
+  padding-bottom: 9rem;
+  color: #00A991;
+  size: 1.25rem;
+}
+@media (max-width: 780px) {
+  main p {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 0;
+  }
+}
+main h1 {
+  font-family: "Roboto", sans-serif;
+  margin: 1.25rem;
+  color: #00A991;
+}
+main h2 {
+  font-family: "Roboto", sans-serif;
+  max-width: 80%;
+  margin-left: 2.5rem;
+  color: #1D2129;
+}
+main a {
+  text-decoration: none;
+}
+main #btnCTA {
+  font-family: "Inconsolata", monospace;
+  margin: 1.25rem 3.75rem;
+  display: block;
+  color: #00A991;
+  background-color: #1D2129;
+  border-color: #00A991;
+}
+main #btnCTA:hover {
+  color: #1D2129;
+  background-color: #00A991;
+  border-color: #00A991;
+}
+
+#project h3 {
+  font-family: "Roboto", sans-serif;
+  color: #00A991;
+  padding: 1.25rem;
+  text-align: center;
+}
+#project .card {
+  border-color: #00A991;
+  height: 35rem;
+  width: 18rem;
+  margin: 0.625rem;
+}
+#project .card h5 {
+  font-family: "Roboto", sans-serif;
+  color: #1D2129;
+}
+#project .card p {
+  font-family: "Inconsolata", monospace;
+  color: #00A991;
+}
+#project #btnLink {
+  font-family: "Inconsolata", monospace;
+  position: absolute;
+  bottom: 0.9rem;
+  color: #00A991;
+  background-color: #1D2129;
+  border-color: #00A991;
+}
+#project #btnLink:hover {
+  color: #1D2129;
+  background-color: #00A991;
+  border-color: #00A991;
+}
+
+#skills {
+  margin-top: 2.5rem;
+}
+#skills h3 {
+  font-family: "Roboto", sans-serif;
+  color: #00A991;
+  padding: 1.25rem;
+  text-align: center;
+}
+#skills i {
+  font-size: 2.5rem;
+  color: #00A991;
+  margin-bottom: 1.25rem;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+#skills p {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.13rem;
+}
+
+#imgProgetti {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-color: #E9ECEF;
+}
+
+.row {
+  margin: 0;
+}
+
+#skills {
+  margin-bottom: 1.25rem;
+}/*# sourceMappingURL=home.css.map */
